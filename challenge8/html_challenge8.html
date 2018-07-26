@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<style type="text/css">
+
+	legend{
+		font-style: italic;
+		font-size: 20px;
+	}
+
+	fieldset{
+		margin-bottom: 15px;
+		display: block;
+		width: 39%;
+		}
+
+	input[type=submit]{
+		
+		border-radius: 3px;
+		font-size: 15px;
+		box-shadow: 3px 3px 1px gray;
+		border-style: solid;
+		border-width: 0.5px;
+		border-color: black;
+	}
+	input,textarea,fieldset,select{border-radius: 5px;}
+
+</style>
+
+<body>
+<form action="mailto:Miguel.Leon@endava.com"method="post">
+	
+<fieldset>
+	<legend><b>Purchases</b></legend>
+	Product Name:<br>
+	<select>
+		<option>Shoes</option>
+		<option>Shirt</option>
+		<option>Jacket</option>
+	</select>
+</fieldset>
+
+<fieldset>
+	<legend><b>Personal details</b></legend>
+	First Name:<br>
+	<input type="text" name="name"><br><br>
+	Last Name:<br>
+	<input type="text" name="l_name">
+</fieldset>
+
+<fieldset>
+	<legend><b>Credit Card Details</b></legend>
+	Credit Card Type:<br>
+	<input type="radio" name="visa">
+	<label for="visa">Visa</label><br>
+
+	<input type="radio" name="master">
+	<label for="master">Mastercard</label><br><br>
+
+	Credit Card Number:<br>
+	<input type="text" name="card"><br><br>
+
+	Expiry Date:<br>
+	<input type="date" name="date">
+</fieldset>
+
+<fieldset>
+	<legend><b>Billing Information</b></legend>
+	Postal Address:<br>
+	<textarea name="commet" id="commet" cols="60" rows="10"></textarea><br><br>
+
+	Home Address:
+	<input type="checkbox" name="same">
+	<label for="same">Same as above</label><br>
+	<textarea name="commet" id="commet" cols="60" rows="10"></textarea>
+</fieldset>
+
+<input type="submit"  value="Send order">
+
+
+</form>
+</body>
+</html>
